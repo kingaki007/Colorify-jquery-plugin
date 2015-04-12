@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<script src="jquery-1.11.2.js"></script>
+		
+	</head>
+	<body>
+		<div id="home"></div>
+		<a href="#">New Link 1</a><br>
+		<a href="#">New Link 2</a><br>
+		<a href="#">New Link 3</a><br>
+		<a href="#">New Link 4</a><br>
+		<a href="#">New Link 5</a><br>
+
+		<button value="Greenify">Greenify</button>
+	
+		<script src="index.js"></script>
+		<script>
+		$(document).ready(function(){
+			$('button').click(function(){
+				$('a').colorify({color:'grey'});
+			});
+		});
+		</script>
+	</body>
+</html>
